@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XLabsCode</web>
+  <name>InternalPageStyle</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XLabsCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>6</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XLabsCode.InternalPageStyle</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>acd72ccf-efcf-481c-abd2-c3f8363a1f40</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>.leftc {
+	padding-right: 0;
+	font-size: 12px;
+}
+.leftc .logo {
+	min-height: 155px;
+        text-align: center;
+	margin-bottom: 25px;
+}
+.blue-panel&gt;.header, .gray-panel&gt;.header {
+	color: #fff;
+	min-height: 25px;
+	font-size: 14px;
+	padding: 2px 6px;
+}
+.blue-panel&gt;.header {
+	background: #0F96D0;
+}
+.gray-panel&gt;.header {
+	background: #999999;
+}
+.blue-panel li .fa {
+	margin-right: 5px;
+}
+.panelcontainer {
+	margin-bottom: 25px;
+	padding: 5px;
+}
+.panelcontainer ul {
+	margin: 0;
+	padding: 0;
+}
+.panelcontainer ul li {
+	list-style:none;
+}
+.gray-panel .panelcontainer ul li {
+	margin-bottom:5px;
+}
+.gray-panel li span {
+	display: block;
+	color: #0F96D0;
+}
+.panelcontainer label {
+        margin-bottom: 0;
+}
+.page-container {
+	font-size: 14px;
+}
+.leftc.col-sm-2 .logo&gt;img {
+	width: 100%;
+	max-height: 100%;
+}
+@media screen and (max-width: 768px) {
+.col-xs-12 .leftc {
+	padding-right: 15px;
+}
+.internal-page.reference {
+	padding: 0 15px;
+}
+}
+@media screen and (min-width: 768px) {
+.logo img {
+        width: 100%; 
+        height: auto; 
+}
+}
+/* table */
+.table&gt;thead&gt;tr&gt;th, .table&gt;tbody&gt;tr&gt;th, .table&gt;tfoot&gt;tr&gt;th, .table&gt;thead&gt;tr&gt;td, .table&gt;tbody&gt;tr&gt;td, .table&gt;tfoot&gt;tr&gt;td, table&gt;thead&gt;tr&gt;th, table&gt;tbody&gt;tr&gt;th, table&gt;tfoot&gt;tr&gt;th, table&gt;thead&gt;tr&gt;td, table&gt;tbody&gt;tr&gt;td, table&gt;tfoot&gt;tr&gt;td {
+	border-top: 0;
+	border-bottom: 1px solid #CCCCCC;
+}
+.table&gt;thead&gt;tr&gt;th, table&gt;thead&gt;tr&gt;th {
+	border-bottom: 2px solid #999999;
+	border-top: 1px solid #999999 !important;
+	font-size: 14px;
+	font-family: 'Exo 2',sans-serif;
+	padding: 18px 10px;
+}
+/* Tabs */
+ul.nav-tabs&gt;li.active&gt;a, ul.nav-tabs&gt;li.active&gt;a:hover, ul.nav-tabs&gt;li.active&gt;a:focus {
+	background: #FFF;
+	color: #000;
+	border: 0;
+	border-bottom: 5px solid #0F96D0;
+}
+ul.nav-tabs&gt;li&gt;a {
+	border: 0;
+	font-size: 18px;
+	font-family: 'Exo 2',sans-serif;
+	color: #999999;
+	font-weight: bold;
+	padding: 8px 10px 5px;
+	border-bottom: 5px solid #FFF;
+}
+ul.nav&gt;li&gt;a:hover, ul.nav&gt;li&gt;a:focus, ul.applicationPanelMoreContainer ul li&gt;span&gt;a:hover {
+	text-decoration: none;
+	background-color: #fff;
+}
+ul.nav.nav-tabs {
+	border: none;
+}
+.tabs-container{
+	padding:10px 0;
+}
+ul.nav-tabs&gt;li&gt;a:hover {
+	border-color: #FFF;
+	color: #0F96D0;
+}
+</code>
+    </property>
+    <property>
+      <contentType>CSS</contentType>
+    </property>
+    <property>
+      <name>Internal page style</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>

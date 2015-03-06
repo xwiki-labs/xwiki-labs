@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>DevelopmentsCode</web>
+  <name>DevelopmentsTranslations</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>DevelopmentsClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>DevelopmentsCode.DevelopmentsTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>d60780fc-b08e-4bb4-9695-693d5e255185</guid>
+    <property>
+      <scope>ON_DEMAND</scope>
+    </property>
+  </object>
+  <content># Class fields
+DevelopmentsCode.DevelopmentsClass_name=Name
+DevelopmentsCode.DevelopmentsClass_sourceCodeURL=Source Code
+DevelopmentsCode.DevelopmentsClass_demoURL=Demo
+DevelopmentsCode.DevelopmentsClass_installationURL=Installation
+DevelopmentsCode.DevelopmentsClass_projects=Projects
+DevelopmentsCode.DevelopmentsClass_projects_Projects.EESC=EESC
+DevelopmentsCode.DevelopmentsClass_projects_ProjectsCode.ProjectsTemplate=
+DevelopmentsCode.DevelopmentsClass_projects_Projects.RISCOSS=RISCOSS
+DevelopmentsCode.DevelopmentsClass_abstract=Abstract
+DevelopmentsCode.DevelopmentsClass_details=Details
+
+# Live table generic keys
+developments.livetable.doc.title=Page title
+developments.livetable.doc.name=Page name
+developments.livetable.doc.space=Space
+developments.livetable.doc.fullname=Page full name
+developments.livetable.doc.author=Last Author
+developments.livetable.doc.creator=Creator
+developments.livetable.doc.date=Update date
+developments.livetable.doc.creationDate=Creation date
+developments.livetable._avatar=Avatar
+developments.livetable._images=Images
+developments.livetable._attachments=Attachments
+developments.livetable._actions=Actions
+developments.livetable._actions.edit=Edit
+developments.livetable._actions.delete=Delete
+developments.livetable.emptyvalue=-
+
+# Live table specific keys
+developments.livetable.name=Name
+developments.livetable.sourceCodeURL=Source Code
+developments.livetable.demoURL=Demo
+developments.livetable.installationURL=Installation
+developments.livetable.projects=Projects
+developments.livetable.abstract=Abstract
+developments.livetable.details=Details</content>
+</xwikidoc>

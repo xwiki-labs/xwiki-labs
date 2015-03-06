@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XLabsCode</web>
+  <name>Style</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XLabsCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title>XLabs Specific Styles</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>false</hidden>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>6</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XLabsCode.Style</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>d7636e89-f80d-4af8-8e82-79087145bbab</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>/* ==== Fonts ==== */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:700,300italic,600,500italic,700italic,300,400,600italic,500,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+/* ==== Global ==== */
+body #contentcontainer {
+	font-family: 'Open Sans', sans-serif;
+}
+div#xwikimaincontainer {
+	padding: 0;
+}
+div#xwikicontent .navbar-default {
+        background-color: #FFFFFF;
+}
+div#menuview, div#headerglobal, div#contentcontainer, div#xwikieditor, div#footerglobal {
+	margin-left: 0;
+	margin-right: 0;
+}
+div.document-header {
+	margin-top: -10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Exo 2', sans-serif;
+}
+h1 {
+	font-size:24px;
+	font-weight: bold;
+	color: #000;
+}
+h2 {
+	color: #0D96D0;
+	font-size: 18px;
+	font-weight: 500;
+}
+p {
+	text-align: justify;
+}
+.Links {
+	text-align: right;
+}
+/* --- Layout width --- */
+.inner-top-footer, .inner-buttom-footer, .menu.menu-horizontal, .header, div#contentcontainer, #xwikimaincontainerinner&gt;#edit.withLock.form, .internal-page {
+	max-width: 1000px;
+	margin: 0 auto;
+	float:none;
+	padding:0;
+}
+body#body {
+	background: #FFF;
+}
+div#menuview {
+	min-height: 50px;
+}
+#menuview .navbar-brand&gt;img {
+	display: none;
+}
+.logo img {
+	border: 1px solid #E2E2E2;
+}
+/* Header */
+/* --- Logo --- */
+#menuview .navbar-brand img {
+	height: auto;
+}
+a.navbar-brand {
+	padding: 0;
+}
+.global-header {
+	height: 70px;
+}
+.header {
+	position: relative;
+}
+/* --- Contact --- */
+a.network-header {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+        background: #f5f5f5 url($xwiki.getSkinFile('butonxwiki.png')) no-repeat center 9px;
+	padding: 4px;
+	border-bottom: 2px solid #333;
+	width: 40px;
+	height: 50px;
+	font-size: 8px;
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+	padding-top: 35px;
+        background-size: auto 49%;
+}
+a.contact-header {
+	display: block;
+	position: absolute;
+	right: 46px;
+	top: 0;
+	background: #f5f5f5;
+	padding: 8px;
+	height: 50px;
+	width: 200px;
+	border-bottom: 2px solid #0f96d0;
+	padding-left: 42px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #666666;
+	font-weight: bold;
+	font-family: arial;
+	line-height: 1.1em;
+}
+a.contact-header span {
+	color: #999999;
+	font-size: 12px;
+	font-weight: bold;
+	display:block;
+}
+a.contact-header .fa {
+	color: #0f96d0;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	font-size: 25px;
+	border-right: 1px solid #CCC;
+	padding-right: 3px;
+}
+/* --- Join our team image ---*/
+.header-right {
+ float: right;
+ padding-top: 15px;
+}
+
+/* --- Search &amp; language select --- */
+.header-search {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	height: 51px;
+	top: 70px;
+	max-width: 370px;
+}
+.header-search&gt;div {
+	display: inline-block;
+vertical-align: top;
+}
+.header-search .globalsearch {
+	padding: 0;
+	margin:  0;
+}
+.header-search .globalsearch .input-group {
+	background: #616161;
+	width: 40px !important;
+	overflow: hidden;
+	display: block;
+	padding-right: 40px;
+	position: relative;
+	height: 52px;
+}
+.header-search .globalsearch .input-group, input#headerglobalsearchinput {
+	-webkit-transition: width 1s, height 1s,-webkit-transform 1s;
+	transition: width 1s, height 1s, transform 1s;
+}
+.header-search .globalsearch .input-group:hover {
+	width: 220px !important;
+}
+input#headerglobalsearchinput{
+	width: 0;
+	padding: 0;
+	margin: 9px 9px 0;
+}
+.header-search .globalsearch .input-group:hover input#headerglobalsearchinput{
+	width:165px;
+	padding: 7px;
+}
+.header-search span.input-group-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header-search .globalsearch .btn {
+	border: 0;
+	box-shadow: none;
+	height: 52px;
+	border-radius: 0;
+	background: #616161;
+}
+.header-search input#headerglobalsearchinput {
+	border-radius: 0;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: #F5F5F5;
+	font-size: 15px;
+}
+.header-search input#headerglobalsearchinput::-webkit-input-placeholder { 
+	color:#C6C6C6;
+}
+.header-search input#headerglobalsearchinput:-moz-placeholder { 
+	color:#C6C6C6;
+	opacity:  1;
+}
+.header-search input#headerglobalsearchinput::-moz-placeholder {
+	color:#C6C6C6;
+	opacity:  1;
+}
+.header-search input#headerglobalsearchinput:-ms-input-placeholder {
+	color:#C6C6C6;
+}
+.navbar-default.actionmenu .navbar-left.globalsearch {
+	display: none;
+}
+.header-search .language {
+	padding-top: 8px;
+	padding-right: 8px;
+}
+.header-search .language .dropdown-toggle {
+	background: none;
+	border: #9B9B9B 1px solid;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 2px 5px;
+	color: #9B9B9B;
+	font-size: 12px;
+	margin-top: 7px;
+}
+/* --- Menu --- */
+div#XWikiMenu, div.menu.menu-horizontal {
+	border: 0;
+background: url($xwiki.getSkinFile('bgMenu.jpg')) repeat-x #393939;
+}
+.menu-horizontal .navbar-nav&gt;li&gt;span&gt;a, .menu-horizontal .navbar-nav&gt;li {
+font-size: 15px;
+font-family: 'Exo 2',sans-serif;
+}
+div.menu-horizontal&gt;ul&gt;li {
+	line-height: 45px;
+	height: 50px;
+}
+.menu-horizontal .navbar-nav&gt;li:hover {
+	background: #000;
+}
+div.menu.menu-horizontal {
+	/* background-color: transparent !important; */
+	min-height: 3.1em;
+	padding: 0;
+}
+ul.nav.navbar-nav {
+	min-height: 50px;
+}
+div.menu-horizontal&gt;li {
+	line-height: 3.1em;
+	height:50px;
+}
+.menu-horizontal&gt;ul&gt;li.xDropdown, .menu-horizontal&gt;ul&gt;li a {
+	color: #fff;
+	text-decoration: none;
+}
+li.xDropdown::after {
+	display: none;
+}
+.menu-horizontal ul li.xDropdown ul * {
+	color: #666;
+	line-height: 1.5em !important;
+}
+.menu-horizontal ul li.xDropdown ul {
+	width: 1000px;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	border-radius: 0;
+	padding-bottom: 15px;
+	margin-top:0;
+background: rgba(255,255,255,0.9) url($xwiki.getSkinFile('logomenu.png')) no-repeat 98% center;
+	padding-right: 400px;
+	margin-left: 0;
+	padding-top: 10px;
+}
+.menu-horizontal .navbar-nav&gt;li {
+	position: static;
+}
+.menu-horizontal ul {
+	position: relative;
+}
+.menu-horizontal ul li.xDropdown ul li {
+	width: 300px;
+	padding: 0 10px;
+	float: left;
+        min-height:25px;
+}
+/* Container */
+/* -- Breadcrumb -- */
+ol#hierarchy {
+	padding: 10px 0;
+	margin-bottom: 5px;
+	background: none;
+}
+ol#hierarchy * {
+	font-weight: bold;
+}
+/* -- Layout -- */
+a:link, a:active, a:visited {
+	text-decoration: none;
+}
+body#body.hidelefthideright .main {
+	padding: 0 0 10px 0;
+	border:0;
+}
+#contentcolumn div.main {
+	box-shadow: none;
+}
+.xcontent hr {
+	display: none;
+}
+#body.hideleft.panel-right-width-Medium .main {
+	padding-left: 0px;
+	padding-right: 35px;
+}
+#body.panel-right-width-Medium #rightPanels, #body.panel-right-width-Medium #editPanels {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#rightPanels div.panel, #rightPanels div.panel * {
+	background: transparent;
+}
+/*panels*/
+div.panel&gt;h1, div.panel&gt;div {
+	margin: 0;
+	padding: 0;
+}
+div.panel&gt;h1 {
+	border-bottom: 5px solid #0F96D0;
+	padding-bottom: 5px;
+	color: #0D96D0;
+	font-weight: 500;
+	font-size: 22px;
+}
+div.panel&gt;div.xwikipanelcontents {
+	background: #F5F5F5;
+	padding: 5px 10px 15px;
+}
+/* Footer */
+.inner-top-footer {
+	font-size: 14px;
+}
+.buttom-footer {
+	background: #343434;
+	color: #fff;
+	clear: both;
+	margin: 0;
+	padding: 20px 0;
+}
+.contact .fa-phone {
+	font-size: 25px;
+}
+.top-footer {
+	background: #565656;
+	min-height: 54px;
+	line-height: 54px;
+	border-bottom: 2px solid #0F96D0;
+}
+.inner-top-footer div {
+	padding: 0;
+	color: #fff;
+}
+.devis {
+	background: #0f96d0;
+	text-align: center;
+	display: block;
+	text-decoration: none !important;
+	min-height: 55px !important;
+}
+.devis, .devis:hover {
+	color: #fff;
+	max-width: 200px;
+}
+.copyright {
+	border-top: 1px solid #666;
+	padding-top: 10px;
+	margin-top: 20px;
+}
+.copyright span {
+	float: right;
+	margin-top: 22px;
+	font-size: 13px;
+	color: #919191;
+	font-weight: bold;
+}
+.inner-buttom-footer .nav li:first-child {
+	font-weight: bold;
+	color: #FFF;
+	padding-bottom: 12px;
+}
+.inner-buttom-footer .nav li {
+	list-style: none;
+}
+.inner-buttom-footer .nav ul {
+	width: 165px;
+	float: left;
+	font-size: 12px;
+	padding: 0;
+	color: #CCCCCC;
+	min-height: 185px;
+}
+.sharing-buttons a {
+	background: #777;
+	color: #FFF;
+	padding: 6px;
+	font-size: 18px;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	float: left;
+	margin: 12px 8px 0 0;
+	text-decoration:none;
+}
+.sharing-buttons {
+	float: right;
+}
+.devis .fa-comment {
+	margin-top: 6px;
+	position: absolute;
+	opacity: 0.6;
+	font-size: 14px !important;
+	margin-left: -9px;
+}
+.top-footer .fa-user {
+	font-size: 23px !important;
+	margin-right: 5px;
+}
+.top-footer a.viadeo {
+	background: url($xwiki.getSkinFile('viadeo.png')) no-repeat #777 6px 4px;
+	background-size: auto 67%;
+}
+.top-footer a.xwikiblog {
+	background: url($xwiki.getSkinFile('buttonXWiki.png')) no-repeat #777 center center;
+	background-size: auto 67%;
+}
+/* ==== Livetable ==== */
+table.xwiki-livetable th.xwiki-livetable-display-header-text {
+	background-color: #FFF;
+	border: 0;
+	border-top: 1px solid #999 !important;
+	font-size: 14px;
+	font-family: 'Exo 2', sans-serif;
+	padding: 18px 10px 5px 0;
+	font-weight:bold;
+}
+table.xwiki-livetable th.xwiki-livetable-display-header-text * {
+	font-weight:bold;
+}
+table.xwiki-livetable table.xwiki-livetable-display thead.xwiki-livetable-display-header {
+	border-bottom: 2px solid #999;
+}
+table.xwiki-livetable tr.xwiki-livetable-display-filters td {
+	padding-bottom: 13px !important;
+	padding-right:10px !important;
+}
+table.xwiki-livetable tbody.xwiki-livetable-display-body td {
+	padding: 8px 10px 8px 0!important;
+	border-bottom: 1px solid #ccc;
+}
+
+/* ==== Mobile ==== */
+@media screen and (max-width: 767px) {
+.main, body#body.hidelefthideright .main {
+	padding: 0 20px;
+}
+#XWikiMenu.in li ul, #XWikiMenu.collapsing li ul {
+	float: left;
+	margin-left: 0;
+	margin-bottom: 5px;
+}
+div#XWikiMenu.in .menu-horizontal.fixedWidth ul ul {
+	margin-left: 0;
+	background: #F5F5F5;
+	width: 97%;
+}
+#XWikiMenu.in li, #XWikiMenu.collapsing li {
+	clear: both;
+}
+#responsive-navigator .navbar-toggle {
+	margin-left: 15px;
+}
+#XWikiMenu.in li {
+	padding: 0 0 0 25px;
+	height: auto;
+}
+#body.hideleft.panel-right-width-Medium .main {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.devisBloc {
+	margin-top: 50px;
+	background: transparent;
+}
+.sharingBtn {
+	position: absolute;
+	background: #333;
+	height: 50px;
+	left: 0;
+	top: 0;
+}
+div.sharing-buttons {
+	float: none;
+	margin: 0 auto;
+	position: static;
+	width: 315px;
+	margin-top: -2px;
+}
+.buttom-footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.inner-buttom-footer .nav ul {
+	width: 160px;
+}
+.header-search .globalsearch .input-group:hover, .header-search .globalsearch .input-group {
+	width: 100% !important;
+	padding-right:0;
+}
+.header-search span.input-group-btn {
+	position: relative;
+}
+.header-search input#headerglobalsearchinput, .header-search .globalsearch .input-group:hover input#headerglobalsearchinput {
+	width: 60%;
+}
+.header img {
+	height: 52px;
+	margin-left: -12px;
+	margin-top: 3px;
+}
+#responsive-navigator .container-fluid {
+	padding:3.2em 1em 0;
+}
+.menu.menu-horizontal {
+	height:inherit !important;
+}
+div#XWikiMenu {
+	padding: 10px 0;
+}
+div.menu-horizontal&gt;ul&gt;li {
+	min-height: 10px;
+	height:inherit;
+	line-height:inherit;
+}
+#XWikiMenu.in li, #XWikiMenu.collapsing li {
+	padding: 0 0 0 20px !important;
+}
+.devis, .devis:hover {
+max-width: 100%;
+}
+.inner-buttom-footer {
+padding: 15px;
+}
+.header-search .input-group {
+margin-top: -1px;
+}
+.header-search div#quicksearch_xwikicom {
+height: 50px;
+overflow: hidden;
+width:50%;
+}
+.global-header {
+height: auto;
+padding: 0;
+}
+.header-search {
+position: static;
+height: auto;
+background: #333;
+text-align: right;
+padding: 0 15px;
+max-width: 100%;
+padding-right: 0;
+}
+nav.navbar.navbar-default {
+border: none;
+}
+.header img {
+height: 52px;
+margin: 2px auto;
+}
+.header a:first-child {
+display: block;
+width: 100%;
+text-align: center;
+}
+a.contact-header, a.network-header {
+display:none;
+}
+.header-search .language {
+float: left;
+padding-bottom: 9px;
+}
+}
+@media screen and (max-width: 930px) {
+.contact {
+	text-align: center;
+}
+}</code>
+    </property>
+    <property>
+      <contentType>CSS</contentType>
+    </property>
+    <property>
+      <name>Global Style </name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>onDemand</use>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>

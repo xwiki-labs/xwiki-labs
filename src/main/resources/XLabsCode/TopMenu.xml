@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>XLabsCode</web>
+  <name>TopMenu</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>XLabsCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title>XLabs Top Menu Style and JS</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.JavaScriptExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XLabsCode.TopMenu</name>
+    <number>0</number>
+    <className>XWiki.JavaScriptExtension</className>
+    <guid>609749e3-7199-4f37-a536-ab1c88d6a14d</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>require(['jquery'], function($) {
+  // Bootstrap nav bar
+  $('.menu-horizontal&gt;ul').addClass('nav navbar-nav');
+  $('.menu.menu-horizontal').wrap('&lt;div class="collapse navbar-collapse XWikiRsp" id="XWikiMenu"&gt;&lt;/div&gt;');
+  $('.XWikiRsp').wrap('&lt;div id="responsive-navigator"&gt;&lt;/div&gt;');
+  $('.navbar-collapse').wrap('&lt;div class="container-fluid"&gt;&lt;/div&gt;');
+  $('#XWikiMenu').wrap('&lt;nav class="navbar navbar-default" role="navigation"&gt;&lt;/nav&gt;');
+  $('#responsive-navigator .container-fluid').append('&lt;div class="navbar-header"&gt;&lt;/div&gt;');
+  $('#responsive-navigator .navbar-header').append('&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#XWikiMenu"&gt;&lt;/button&gt;');
+  $('#responsive-navigator .navbar-toggle').append('&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;');
+  $('#responsive-navigator .collapsed').append('&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;&lt;span class="icon-bar"&gt;&lt;/span&gt;');
+ $('ul &gt; li.xDropdown').click(function() { 
+ $(this).toggleClass('open');
+ });
+})</code>
+    </property>
+    <property>
+      <name>JS Bootstrap customization</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>always</use>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.StyleSheetExtension</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <cache>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>cache</name>
+        <number>5</number>
+        <prettyName>Caching policy</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>long|short|default|forbid</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </cache>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Code</prettyName>
+        <rows>20</rows>
+        <size>50</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <contentType>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>contentType</name>
+        <number>6</number>
+        <prettyName>Content Type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>CSS|LESS</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </contentType>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+      <parse>
+        <disabled>0</disabled>
+        <displayFormType>select</displayFormType>
+        <displayType>yesno</displayType>
+        <name>parse</name>
+        <number>4</number>
+        <prettyName>Parse content</prettyName>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.BooleanClass</classType>
+      </parse>
+      <use>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>use</name>
+        <number>3</number>
+        <prettyName>Use this extension</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>currentPage|onDemand|always</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </use>
+    </class>
+    <name>XLabsCode.TopMenu</name>
+    <number>0</number>
+    <className>XWiki.StyleSheetExtension</className>
+    <guid>5ac7c0fb-2abb-4be1-ba03-6391edaf0f6a</guid>
+    <property>
+      <cache>long</cache>
+    </property>
+    <property>
+      <code>#XWikiMenu, #responsive-navigator .container-fluid {
+        padding: 0;
+}
+#responsive-navigator .navbar-header {
+	float: left;
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	left: 1em;
+}
+.navbar.navbar-default {
+	border-radius: 0;
+	margin: 0;
+}
+@media screen and (max-width: 767px) {
+#responsive-navigator .container-fluid {
+	padding: 3.4em 1em 1em;
+}
+li.xDropdown ul {
+        display: none !important;
+}
+li.xDropdown.open&gt;ul {
+        display: block !important;
+}
+#XWikiMenu li:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+#XWikiMenu li.xDropdown:hover {
+	background: none;
+}
+li.xDropdown::after {
+	position: absolute;
+	top: 0;
+	left: -0.2em;
+	font-size: 0.8em !important;
+}
+#XWikiMenu.in li, #XWikiMenu.collapsing li {
+	display: block;
+	line-height: 2em;
+}
+#XWikiMenu.in .menu-horizontal.fixedWidth ul ul, #XWikiMenu.collapsing .menu-horizontal.fixedWidth ul ul {
+	display: block;
+	position: static;
+	width: 100%;
+	margin-left: 0.5em;
+        border:none;
+        box-shadow: none;
+}
+}
+.menu-horizontal.fixedWidth ul ul{
+        top: 3.4em;
+}
+/* General Styles */
+
+.menu-vertical ul, .menu-horizontal ul {
+	padding: 0;
+}
+
+.menu.menu-horizontal {
+	font-size: 1em;
+	min-height: 3.6em;
+        height: auto;
+}
+.menu-horizontal li {
+	padding: 0 1.3em 0;
+	line-height: 3.57em;
+}
+</code>
+    </property>
+    <property>
+      <contentType>CSS</contentType>
+    </property>
+    <property>
+      <name>css Bootstrap customization</name>
+    </property>
+    <property>
+      <parse>1</parse>
+    </property>
+    <property>
+      <use>always</use>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>

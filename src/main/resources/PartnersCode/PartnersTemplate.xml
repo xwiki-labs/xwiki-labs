@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>PartnersCode</web>
+  <name>PartnersTemplate</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>PartnersClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title>PartnersTemplate</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <attachment>
+    <filename>logo.png</filename>
+    <filesize>3594</filesize>
+    <author>XWiki.ldubost</author>
+    <date>1425303426000</date>
+    <version>1.1</version>
+    <comment/>
+    <content>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
+QmCC
+</content>
+  </attachment>
+  <object>
+    <class>
+      <name>PartnersCode.PartnersClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <abstract>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <editor>Text</editor>
+        <name>abstract</name>
+        <number>4</number>
+        <picker>0</picker>
+        <prettyName>abstract</prettyName>
+        <rows>5</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </abstract>
+      <date>
+        <dateFormat>dd/MM/yyyy HH:mm:ss</dateFormat>
+        <disabled>0</disabled>
+        <emptyIsToday>1</emptyIsToday>
+        <name>date</name>
+        <number>8</number>
+        <picker>1</picker>
+        <prettyName>date</prettyName>
+        <size>20</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.DateClass</classType>
+      </date>
+      <description>
+        <customDisplay>{{include reference="AppWithinMinutes.Content"/}}</customDisplay>
+        <disabled>0</disabled>
+        <name>description</name>
+        <number>5</number>
+        <prettyName>description</prettyName>
+        <script/>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.ComputedFieldClass</classType>
+      </description>
+      <logo>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <name>logo</name>
+        <number>2</number>
+        <picker>0</picker>
+        <prettyName>logo</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </logo>
+      <name1>
+        <customDisplay>{{include reference="AppWithinMinutes.Title"/}}</customDisplay>
+        <disabled>0</disabled>
+        <name>name1</name>
+        <number>1</number>
+        <prettyName>name1</prettyName>
+        <script/>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.ComputedFieldClass</classType>
+      </name1>
+      <type>
+        <cache>0</cache>
+        <customDisplay/>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>type</name>
+        <number>3</number>
+        <picker>0</picker>
+        <prettyName>type</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <sort>none</sort>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <values>_= |Inst=Institutionnal|Tech=Technology|Res=Reseller|Integ=Integrator|Other</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </type>
+      <url>
+        <disabled>0</disabled>
+        <name>url</name>
+        <number>7</number>
+        <prettyName>url</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </url>
+      <website>
+        <customDisplay>{{velocity}}
+#set ($propertyClass = $object.getxWikiClass().get($name))
+#set ($pickerId = "${prefix}${name}")
+##
+##
+#if ($type == 'edit')
+   {{html}} $doc.displayEdit($propertyClass, $prefix, $object){{/html}}
+#else
+  #set($value = $doc.displayView($propertyClass, $prefix, $object))
+  #set($link = $value)
+  #if(!$link.startsWith("http"))#set($link = "http://"+$link)#end
+  #if($!value != ""){{html}}&lt;a href="$link" rel="__blank" target="_blank"&gt;$!value&lt;/a&gt;{{/html}}#end
+#end
+{{/velocity}}</customDisplay>
+        <disabled>0</disabled>
+        <name>website</name>
+        <number>6</number>
+        <picker>0</picker>
+        <prettyName>website</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <validationMessage/>
+        <validationRegExp/>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </website>
+    </class>
+    <name>PartnersCode.PartnersTemplate</name>
+    <number>0</number>
+    <className>PartnersCode.PartnersClass</className>
+    <guid>0d70ee97-ec70-404e-bfa5-8271ca33cb6b</guid>
+    <property>
+      <abstract/>
+    </property>
+    <property>
+      <logo/>
+    </property>
+    <property>
+      <type>_</type>
+    </property>
+    <property>
+      <website/>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>

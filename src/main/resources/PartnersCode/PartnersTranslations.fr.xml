@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>PartnersCode</web>
+  <name>PartnersTranslations</name>
+  <language>fr</language>
+  <defaultLanguage/>
+  <translation>1</translation>
+  <parent>PartnersCode.WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content># Class fields
+PartnersCode.PartnersClass_name1=Nom du partenaire
+PartnersCode.PartnersClass_logo=Logo du partenaire
+PartnersCode.PartnersClass_changelogo=Changer le logo
+PartnersCode.PartnersClass_type=Type de partenaire
+PartnersCode.PartnersClass_type_Other=Autre
+PartnersCode.PartnersClass_type_Tech=Technologique
+PartnersCode.PartnersClass_type_Integ=Intégrateur
+PartnersCode.PartnersClass_type_Res=Revendeur
+PartnersCode.PartnersClass_type_Inst=Institutionnel
+PartnersCode.PartnersClass_abstract=Résumé partenaire
+PartnersCode.PartnersClass_description=Description du partenaire
+PartnersCode.PartnersClass_website=Site web du partenaire
+partners.sheet.otherinformation=Autres informations
+
+# Live table generic keys
+partners.livetable.doc.title=Page title
+partners.livetable.doc.name=Page name
+partners.livetable.doc.space=Space
+partners.livetable.doc.fullname=Page full name
+partners.livetable.doc.author=Last Author
+partners.livetable.doc.creator=Creator
+partners.livetable.doc.date=Update date
+partners.livetable.doc.creationDate=Creation date
+partners.livetable._avatar=Avatar
+partners.livetable._images=Images
+partners.livetable._attachments=Attachments
+partners.livetable._actions=Actions
+partners.livetable._actions.edit=Edit
+partners.livetable._actions.delete=Delete
+partners.livetable.emptyvalue=-
+
+# Live table specific keys
+partners.livetable.name1=Nom du partenaire
+partners.livetable.logo=Logo du partenaire
+partners.livetable.type=Type de partenaire
+partners.livetable.description=Description du partenaire
+partners.livetable.website=Site web du partenaire</content>
+</xwikidoc>
